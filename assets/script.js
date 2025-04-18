@@ -17,7 +17,23 @@ cont.onmousemove = function(event){
     var posts = document.getElementsByClassName('posts')[0];
     var oldParent = document.getElementsByTagName("body")[0];
     var newParent = document.getElementsByClassName('leftpart')[0];
-    newParent.appendChild(posts);
     oldParent.removeChild(posts);
-    
+    newParent.appendChild(posts);
+    var newParent = document.getElementsByClassName('rightpart')[0].style.border="none";
  }
+ else{
+  document.getElementById('submit').style.marginBottom = "100px";
+ }
+
+ //for animation effect of the greeting
+ var greet = document.getElementById('greet');
+  var characters =greet.textContent.split('');
+  greet.innerHTML ="";
+  greet.style.padding="20px 40px";
+ characters.forEach((char,i)=>{
+  var span = document.createElement('span');
+  span.innerHTML = char;
+  span.style.animation = "jump 5s ease infinite";
+  span.style.animationDelay = `${i*0.5}s`
+  greet.appendChild(span);
+ })
