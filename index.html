@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eastern</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/posts.css">
+<link rel="stylesheet" href="assets/animation.css">
+</head>
+<body>
+  <header>
+    <div class="sth"></div>
+  </header>
+  <main>
+    <div class="leftpart">
+      <div class="heading"><h1>Happy Eastern</h1></div>
+      <div class="addpost"><div class="background"><div class="irregular"></div></div>
+        <form>
+           <input type="text" placeholder="title" name="title" id="titlein">
+            <textarea name="msg" id="msg">Share your wishes, gratitude's, feelings or anything ..</textarea>
+            <input type="button" value="send" onclick="postNow()" id="submit">
+        </form>
+        <div id="notification"></div>
+      </div>
+    </div>
+     <div class="rightpart">
+      <div class="a3d">
+        <div class="container">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+     </div>
+  </main>
+  <section class="posts"></section>
+  <script>
+    var cont = document.getElementsByClassName("container")[0];
+   cont.onmousemove = function(event){
+      cont.style.transform = `rotateX(${event.clientX}deg) rotateY(${event.clientY}deg)`;
+    }
+    var left = document.getElementsByClassName("leftpart")[0];
+    left.onmousemove = function(){
+      cont.style.transform = "rotateX(-90deg) rotateZ(45deg)";
+    }
+  </script>
+  <script src="backend/load_data.js"></script>
+</body>
+</html>

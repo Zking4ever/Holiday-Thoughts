@@ -1,0 +1,42 @@
+ /*style the retrived posts */
+ .posts{
+    display: grid;
+    justify-content: space-around;
+    gap: 20px;
+    grid-template-columns: 30% 25% 30%;
+  }
+  .item{
+    display:flex;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 10px;
+  }
+  .title{
+    position: absolute;
+    top: 0;
+    left: 5px;
+  }
+  .msg{
+    position: absolute;
+    top: 20px;
+    left: 5px;
+  }
+  .like,.repost{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  .like{
+    right: 80px;
+  }
+  /*notification div */
+  #notification{
+    align-self: center;
+    background-color: azure;
+    border-radius: 5%;
+    padding: 5px 30px;
+    display: none;
+    transition: all 3s ease;
+  }
