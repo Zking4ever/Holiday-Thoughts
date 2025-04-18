@@ -19,4 +19,18 @@ while ($row = mysqli_fetch_array($response)){
     $display.= "reposts: $row[4]";
     $display.="</div></div>";
     echo $display;
+    echo "<style>
+.item{
+  animation: items ease;
+  animation-timeline:view();
+ }
+ @keyframes items {
+  from{
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  to{
+      opacity: 100%;
+      transform: translateY(0px);
+  }</style>";
 }

@@ -1,5 +1,6 @@
  /*style the retrived posts */
  .posts{
+  width: 90%;
     display: grid;
     justify-content: space-around;
     gap: 20px;
