@@ -33,7 +33,7 @@ loadfunc();//to load everytime from the server
     ajaxRequest.onreadystatechange = function(){
       if(ajaxRequest.readyState ==4){
         var resultHolder = document.getElementsByClassName('posts')[0];
-        resultHolder.innerHTML = ajaxRequest.response;
+        resultHolder.innerHTML += ajaxRequest.response;
       }
     }
       var request ="http://localhost/by%20astawus/eastern/backend/load.php";

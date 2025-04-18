@@ -99,6 +99,7 @@
 @media (max-width:760px) {
 main{
   display: block;
+  flex-wrap: nowrap;
 } 
 .leftpart{
   width: 100%;
@@ -122,8 +123,5 @@ main{
 }
 .irregular{
   width: 100%;
-}
-.posts{
-  display: block;
-}
+} 
 }

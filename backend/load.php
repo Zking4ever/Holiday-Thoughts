@@ -23,14 +23,17 @@ while ($row = mysqli_fetch_array($response)){
 .item{
   animation: items ease;
   animation-timeline:view();
+  animation-range:entry 0% cover 40%;
  }
  @keyframes items {
   from{
       opacity: 0;
       transform: translateY(100px);
+      scale:0.5;
   }
   to{
       opacity: 100%;
       transform: translateY(0px);
+      scale:1;
   }</style>";
 }

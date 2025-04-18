@@ -74,12 +74,12 @@
     width: 400px;
  }
  
- /*post item on scroll effect */
+ /*post item on scroll effect 
 
  .item{
   animation: items 5s ease;
-  animation-timeline: view();
- }
+  animation-timeline:view();
+}
  @keyframes items {
   from{
       opacity: 0;
@@ -90,3 +90,4 @@
       transform: translateY(0px);
   }
  }
+  */
