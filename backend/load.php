@@ -18,8 +18,7 @@ while ($row = mysqli_fetch_array($response)){
     $display.="</div><div class='repost'>";
     $display.= "reposts: $row[4]";
     $display.="</div></div>";
-    echo $display;
-    echo "<style>
+    $display.= "<style>
 .item{
   animation: items ease;
   animation-timeline:view();
@@ -36,4 +35,6 @@ while ($row = mysqli_fetch_array($response)){
       transform: translateY(0px);
       scale:1;
   }</style>";
+  
+  echo $display;
 }

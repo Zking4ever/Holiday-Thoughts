@@ -2,7 +2,7 @@
 
 $host ="eastermessages.chmgoo8wk5c6.eu-north-1.rds.amazonaws.com";
 $user ="admin";
-$password ="9iWmTphoR0oKEJsldnHm";
+$password ="mypasswordwillgoher";
 $dbname = "eastermessages";
 
 /*
