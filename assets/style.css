@@ -81,9 +81,13 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    border-left: solid;
     z-index: 1;
   }
+.intract{
+  position: absolute;
+  transform: translateY(-40px);
+  font-size: 30px;
+}
 @media (max-width:760px) {
 main{
   display: block;
@@ -115,4 +119,10 @@ main{
 .irregular{
   width: 100%;
 } 
+.intract{
+  position: relative;
+  transform: translateY(0px);
+  font-size: 60px;
+  z-index: 9900;
+}
 }

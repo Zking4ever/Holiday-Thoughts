@@ -16,7 +16,7 @@ var interval='';//to hold nterval of repetative functions
     }
     var title = document.getElementById('titlein').value;
     var msg = document.getElementById('msg').value;
-    var url = "http://localhost/by%20astawus/eastern/backend/post.php"; //point to post.php where the post is done
+    var url = "post.php"; //point to post.php where the post is done
     url+="?title="+title+"&msg="+msg;
     ajaxRequest.open("GET",url,true);
     ajaxRequest.send();
@@ -27,7 +27,7 @@ function removeNotif(){
         notif.style.opacity = 0;
 } 
 //loading posts while the page opens
-loadfunc();//to load everytime from the server
+//loadfunc();//to load everytime from the server
   function loadfunc(){
     var ajaxRequest = new XMLHttpRequest;
     ajaxRequest.onreadystatechange = function(){
@@ -36,7 +36,7 @@ loadfunc();//to load everytime from the server
         resultHolder.innerHTML += ajaxRequest.response;
       }
     }
-      var request ="http://localhost/by%20astawus/eastern/backend/load.php";
+      var request ="load.php";
 
       ajaxRequest.open("POST",request,true);
       ajaxRequest.send();
