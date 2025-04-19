@@ -1,5 +1,4 @@
  /*style the retrived posts */
- 
  .posts{
    width: 90%;
     display: grid;
@@ -14,7 +13,23 @@
       border-radius: 10px;
       z-index: 3000;
       position: relative;
+      animation: items ease;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
     }
+ /*post item on scroll effect */
+
+ @keyframes items {
+  from{
+      opacity: 0;
+      transform: translateY(40px);
+  }
+  to{
+      opacity: 100%;
+      transform: translateY(0px);
+  }
+ }
+
     .item::after {
       content:'';
       position: absolute; 
@@ -29,21 +44,15 @@
     
   .title{
     position: absolute;
-    top: 0;
-    left: 5px;
+    top: 7%;
+    left: 70%;
+    transform: translateX(-50%);
   }
   .msg{
     position: absolute;
-    top: 20px;
-    left: 5px;
-  }
-  .like,.repost{
-    position: absolute;
-    bottom: 0;
-    right: 10px;
-  }
-  .like{
-    right: 80px;
+    top: 25%;
+    left: 15px;
+    width: 100%;
   }
   /*notification div */
   #notification{
@@ -51,8 +60,16 @@
     background-color: azure;
     border-radius: 5%;
     padding: 5px 30px;
-    display: none;
     transition: all 3s ease;
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  /*notif anima to display then disapear */
+  @keyframes notif {
+    50%{
+      transform: translateY(-10px);
+      opacity: 100%;
+    }
   }
   @media (max-width:760px) {
 #posts,.posts{
@@ -62,7 +79,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 .item{
   width: 80%;

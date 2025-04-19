@@ -1,97 +1,5 @@
-.a3d{
-    transform-style: preserve-3d;
-    animation: rotate 5s ease infinite;
-  }
-  @keyframes rotate {
-    50%{
-      transform: rotateY(350deg);
-    }
-  }
-  .container{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    transform-style: preserve-3d;
-    transform: rotateX(-90deg) rotateZ(45deg);
-  }
-  .box{
-    background-color: rgb(249, 11, 11);
-    height: 50px;
-    width: 50px;
-    transform: rotateY(70deg);
-    position: absolute;
-    border: solid rgb(155, 105, 105);
-  }
-  .box:nth-child(1){
-    transform: translateZ(-200px);
-  }
-  .box:nth-child(2){
-    transform: translateZ(200px);
-  }
-  .box:nth-child(3){
-    transform: translateZ(-40px);
-    width: 140px;
-  }
-  .box:nth-child(4){
-    transform: translateZ(-100px);
-    width: 140px;
-  }
-  .box:nth-child(5){
-    transform: rotateY(90deg)translateZ(25px);
-    width: 400px;
-    z-index: 1;
-  }
-  .box:nth-child(6){
-    transform-origin: 50% 50%;
-    transform: rotateY(90deg) translateZ(-25px);
-    width: 400px;
-  }
-  .box:nth-child(7){
-    transform:rotateY(90deg) translateZ(70px) translateX(70px);
-    width: 60px;
-  }
-  .box:nth-child(8){
-    transform:rotateY(90deg) translateZ(-70px)translateX(70px);
-    width: 60px;
-  }
-  .box:nth-child(9){
-    transform: rotateX(90deg) translateZ(-25px)translateY(-70px);
-    width: 140px;
-    height: 60px;
-  }
-  .box:nth-child(10){
-    transform: rotateX(90deg) translateZ(25px)translateY(-70px);
-    width: 140px;
-    height: 60px;
-  }
-  .box:nth-child(11){
-    transform: rotateX(90deg) rotateZ(90deg) translateZ(25px);
-    width: 400px;
-  }
-  .box:nth-child(12){
-    transform: rotateX(90deg) rotateZ(90deg) translateZ(-25px);
-    width: 400px;
- }
- 
- /*post item on scroll effect 
 
- .item{
-  animation: items 5s ease;
-  animation-timeline:view();
-}
- @keyframes items {
-  from{
-      opacity: 0;
-      transform: translateY(40px);
-  }
-  to{
-      opacity: 100%;
-      transform: translateY(0px);
-  }
- }
-  */
-  /* animation of happy eater */
+  /* animation of happy easter */
   @keyframes jump {
     50%{
         transform: translateX(-300px);
@@ -102,7 +10,6 @@
 @media (max-width:760px) {
   @keyframes jump {
     50%{
-        transform: translateX(-300px);
         font-size: 30px;
         color: red;
     }

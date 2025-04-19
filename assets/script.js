@@ -1,12 +1,3 @@
-//to make the cross moveable
-var cont = document.getElementsByClassName("container")[0];
-cont.onmousemove = function(event){
-   cont.style.transform = `rotateX(${event.clientX}deg) rotateY(${event.clientY}deg)`;
- }
- var left = document.getElementsByClassName("leftpart")[0];
- left.onmousemove = function(){
-   cont.style.transform = "rotateX(-90deg) rotateZ(45deg)";
- }
 
  //to check whether its mobile or not
 
@@ -19,7 +10,6 @@ cont.onmousemove = function(event){
     var newParent = document.getElementsByClassName('leftpart')[0];
     oldParent.removeChild(posts);
     newParent.appendChild(posts);
-    var newParent = document.getElementsByClassName('rightpart')[0].style.border="none";
  }
  else{
   document.getElementById('submit').style.marginBottom = "100px";

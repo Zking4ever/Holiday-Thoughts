@@ -11,40 +11,21 @@
 <body>
   <main>
     <div class="leftpart">
-      <div class="heading"id="greet">Happy Eastern</div>
+      <div class="heading"id="greet">Happy Easter</div>
       <div class="addpost"><div class="background"><div class="irregular"></div></div>
-        <form action="backend/conn.php" method="get">
+        <form>
            <input type="text" placeholder="title" name="title" id="titlein">
-            <textarea name="msg" id="msg">Share your wishes, gratitude's, feelings or anything ..</textarea>
-            <input type="submit" value="submit">
-            <input type="button" value="send" onclick="postNow()" id="submit">
+            <textarea name="msg" id="msg">🎉Happy Easter! Lets share feelings, coincidences, thoughts and anything..</textarea>
+            <input type="button" value="post"id="submit">
         </form>
         <div id="notification"></div>
       </div>
     </div>
-     <div class="rightpart">
-      <div class="a3d">
-        <div class="container">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
-      </div>
-     </div>
   </main>
   <section class="posts" id="posts">
     <div class="intract">POSTS</div>
   </section>
   <script src="assets/script.js"></script>
-  <script src="backend/load_data.js">loadfunc();</script>
+  <script src="backend/loadToPage.js"></script>
 </body>
 </html>
