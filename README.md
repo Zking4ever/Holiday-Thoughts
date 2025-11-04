@@ -5,4 +5,4 @@ Made the sender anonymouse to let him express himself freely.
 
 Since it is alive. If you want to share something anonymously go reflect there
 
-easterchat.atwebpages.com
+[Go Live Now](easterchat.atwebpages.com)
